@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- input que vai receber a senha gerada -->
+        <input id="generatedPassowrd" type="text" />
+        <div>
+            <!-- Barra de rolagem para seleção de quantidade de caracteres da senha -->
+            <input id="characteresLenght" type="range" min="4" max="50"/>
+            <!-- Label referenciando o input -->
+            <label for="characteresLenght"></label>
+        </div>
+        <div>
+            <!-- Checkbox para letras minusculas -->
+            <input id="checkLower" type="checkbox" />
+            <!-- Label referenciando o input -->
+            <label for="checkLower">Letras Minusculas</label>
+        </div>
+        <div>
+            <!-- Checkbox para letras maiusculas -->
+            <input id="checkUpper" type="checkbox">
+            <!-- Label que referencia o INPUT -->
+            <label for="checkUpper">Letras Maiusculas</label>
+        </div>
+        <div>
+            <!-- Checkbox para numeros -->
+            <input id="checkNumber" type="checkbox">
+            <!-- Label que referencia o INPUT -->
+            <label for="checkNumber">Números</label>
+        </div>
+        <div>
+            <!-- Checkbox para caracteres especiais -->
+            <input id="checkSpecial" type="checkbox">
+            <!-- Label que referencia o INPUT -->
+            <label for="checkSpecial">Caracteres Especiais</label>
+        </div>
+        <button id="generatedBtn">Gerar Senha</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
